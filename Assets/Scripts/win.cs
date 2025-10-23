@@ -4,16 +4,16 @@ using TMPro;
 public class win : MonoBehaviour
 {
         public GameObject winText;
-        public GameObject Restart;
-        public GameObject Quit;
+        public GameObject Res;
+        public GameObject Qui;
     // Start is called once before the first execution of Update after the MonoBehaviour is created // “other” refers to the collider on the GameObject inside this trigger
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("A collider has entered the DoorObject trigger");
         winText.SetActive(true);
         winText.GetComponent<TextMeshProUGUI>().text = "You Win!";
-        Restart.SetActive(true);
-        Quit.SetActive(true);
+        Res.SetActive(true);
+        Qui.SetActive(true);
     }
 
     void OnTriggerStay (Collider other)

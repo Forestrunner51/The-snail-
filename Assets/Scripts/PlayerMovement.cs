@@ -12,14 +12,14 @@ public class PlayerMovement : MonoBehaviour
 
     public InputActionReference moveAction;
     public GameObject winText;
-    public GameObject Restart;
-    public GameObject Quit;
+    public GameObject Res;
+    public GameObject Qui;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         winText.SetActive(false);
-        Restart.SetActive(false);
-        Quit.SetActive(false);
+        Res.SetActive(false);
+        Qui.SetActive(false);
     }
     private void OnEnable()
     {
@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-     rb.linearVelocity = new Vector3(_moveD.x * speed, rb.linearVelocity.y, _moveD.y * speed);
-    }
+      Vector3 move = new Vector3(_moveD.x, 0, _moveD.y); // X for left/right, Y for forward/back
+    Vector3 moveDir = transform.TransformDirection(move) * speed;
+    rb.linearVelocity = new Vector3(moveDir.x, rb.linearVelocity.y, moveDir.z);
+}
 }

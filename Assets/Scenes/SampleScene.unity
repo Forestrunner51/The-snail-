@@ -679,6 +679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
+  Res: {fileID: 0}
+  Qui: {fileID: 0}
 --- !u!65 &324107048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2571,6 +2573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 91726071}
+  Res: {fileID: 1508742545}
+  Qui: {fileID: 2055844655}
 --- !u!1 &1201788896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3398,7 @@ GameObject:
   - component: {fileID: 1786224396}
   - component: {fileID: 1786224398}
   - component: {fileID: 1786224397}
+  - component: {fileID: 1786224399}
   m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
@@ -3519,6 +3524,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786224395}
   m_CullTransparentMesh: 1
+--- !u!114 &1786224399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786224395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954542b9738de7ca3a20d73a0ea1b6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1916369341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,8 +3774,8 @@ MonoBehaviour:
   speed: 5
   moveAction: {fileID: 3919812958709401675, guid: 0c760729545ec13e5a6e619b71a0eaa4, type: 3}
   winText: {fileID: 91726071}
-  Restart: {fileID: 1508742545}
-  Quit: {fileID: 2055844655}
+  Res: {fileID: 1508742545}
+  Qui: {fileID: 2055844655}
 --- !u!54 &2049343802
 Rigidbody:
   m_ObjectHideFlags: 0
